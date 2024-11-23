@@ -10,7 +10,8 @@ public class DocComments {
         double bmi = calculateBodyMassIndex(1.65, 58);
         System.out.println(bmi);
 
-        //Ejecuta el nuevo método 
+        //Ejecuta el nuevo método
+        classificationBmi(bmi);
     }
 
     /**
@@ -56,8 +57,37 @@ public class DocComments {
     }
 
     //Escribe una función que con el índice de masa corporal devuelva un String con los resultados y documéntala:
-    
-    /* Clasificación índice de masa corportal rango - kg/m2
+
+    /**
+     * Function name: classificationBmi
+     *
+     * @param bmi (double)
+     *
+     * Inside the function:
+     * 1. classify your body mass index according to its value.
+     */
+    static void classificationBmi(double bmi){
+        if (bmi < 16){
+            System.out.println("Mi índice de masa corporal corresponde a Delgadez severa");
+        } else if (bmi >= 16 && bmi < 17) {
+            System.out.println("Mi índice de masa corporal corresponde a Delgadez moderada");
+        } else if (bmi >= 17 && bmi < 18.5) {
+            System.out.println("Mi índice de masa corporal corresponde a Delgadez leve");
+        } else if (bmi >= 18.5 && bmi < 25) {
+            System.out.println("Mi índice de masa corporal corresponde a Normal");
+        } else if (bmi >= 25 && bmi < 30) {
+            System.out.println("Mi índice de masa corporal corresponde a Sobrepeso");
+        } else if (bmi >= 30 && bmi < 35) {
+            System.out.println("Mi índice de masa corporal corresponde a Obeso Clase I");
+        } else if (bmi >= 35 && bmi < 40) {
+            System.out.println("Mi índice de masa corporal corresponde a Obeso Clase II");
+        } else if (bmi > 40) {
+            System.out.println("Mi índice de masa corporal corresponde a Obeso Clase III");
+        } else {
+            System.out.println("El valor de bmi no es válido");
+        }
+    }
+    /* Clasificación índice de masa corporal rango - kg/m2
     Delgadez severa	< 16
     Delgadez moderada	16 - 17
     Delgadez leve	17 - 18.5
@@ -66,6 +96,7 @@ public class DocComments {
     Obeso Clase I	30 - 35
     Obeso Clase II	35 - 40
     Obeso Clase III	> 40 */
+
 
 
 
