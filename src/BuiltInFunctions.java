@@ -42,6 +42,8 @@ public class BuiltInFunctions {
         System.out.println("Introduce tu prefijo:");
         String prefix1 = scanner.nextLine();
         findPrefix1(message1, prefix1);
+
+        scanner.close();
     }
 
     /**
