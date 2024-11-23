@@ -67,6 +67,7 @@ public class DocComments {
      * 1. classify your body mass index according to its value.
      */
     static void classificationBmi(double bmi){
+        //I use void because the method doesn't return a value
         if (bmi < 16){
             System.out.println("Mi índice de masa corporal corresponde a Delgadez severa");
         } else if (bmi >= 16 && bmi < 17) {
